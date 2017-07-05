@@ -15,8 +15,5 @@
 	<classpathentry kind="con" path="com.sap.ext.libs.xpi.classpathContainer/adapter"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SAP XPI Library - Custom"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="G:/Divisions/Applications/AT/ATL/SAP Process Orchestration (former PI)/Development/Libraries/AII/com.sap.aii.af.sdk.jar"/>
-	<classpathentry kind="lib" path="G:/Divisions/Applications/AT/ATL/SAP Process Orchestration (former PI)/Development/Libraries/AII/com.sap.aii.af.ms.ifc_api.jar"/>
-	<classpathentry kind="lib" path="G:/Divisions/Applications/AT/ATL/SAP Process Orchestration (former PI)/Development/Libraries/AII/com.sap.aii.adapter.xi.svc_api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
