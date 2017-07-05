@@ -15,10 +15,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 
-import com.endress.xpi.af.modules.dcappender.util.http.HttpClient;
-import com.endress.xpi.af.modules.dcappender.util.http.HttpClientException;
-import com.endress.xpi.af.modules.dcappender.util.http.HttpRequest;
-import com.endress.xpi.af.modules.dcappender.util.http.HttpResponse;
+import com.doc.xpi.af.modules.dcappender.util.http.HttpClient;
+import com.doc.xpi.af.modules.dcappender.util.http.HttpClientException;
+import com.doc.xpi.af.modules.dcappender.util.http.HttpRequest;
+import com.doc.xpi.af.modules.dcappender.util.http.HttpResponse;
 import com.sap.tc.logging.Location;
 
 

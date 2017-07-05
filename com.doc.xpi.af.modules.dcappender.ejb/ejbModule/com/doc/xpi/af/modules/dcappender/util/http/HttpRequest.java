@@ -5,7 +5,7 @@ import java.net.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.endress.xpi.af.modules.dcappender.util.http.HttpRequest;
+import com.doc.xpi.af.modules.dcappender.util.http.HttpRequest;
 import com.sap.tc.logging.Location;
 
 public class HttpRequest {

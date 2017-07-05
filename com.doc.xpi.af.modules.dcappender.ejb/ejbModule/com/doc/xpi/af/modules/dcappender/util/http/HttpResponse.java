@@ -19,9 +19,9 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import com.endress.xpi.af.modules.dcappender.util.http.HttpClientException;
-import com.endress.xpi.af.modules.dcappender.util.http.HttpResponse;
-import com.endress.xpi.af.modules.dcappender.util.http.NamespaceResolver;
+import com.doc.xpi.af.modules.dcappender.util.http.HttpClientException;
+import com.doc.xpi.af.modules.dcappender.util.http.HttpResponse;
+import com.doc.xpi.af.modules.dcappender.util.http.NamespaceResolver;
 import com.sap.tc.logging.Location;
 
 public class HttpResponse {
