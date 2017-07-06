@@ -15,5 +15,6 @@
 	<classpathentry kind="con" path="com.sap.ext.libs.xpi.classpathContainer/adapter"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SAP XPI Library - Custom"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/DDD_POAM-D_D~dcappender~endress.com"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
