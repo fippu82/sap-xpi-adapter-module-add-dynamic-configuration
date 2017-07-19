@@ -192,7 +192,7 @@ public class KeyValueStore {
 		
 		String mid;
 		if(ServerNodeSpecific){
-			mid =  UNIQUE_KEY + "." + getServerNodeID() + "." + key;
+			mid =  UNIQUE_KEY + "." + getUniqueServerID() + "." + key;
 		}
 		else{
 			mid = UNIQUE_KEY + "." + key;	
@@ -226,16 +226,17 @@ public class KeyValueStore {
 	 * @return unique ClusterID
 	 * @throws ModuleException
 	 */
-	private String getServerNodeID() {
-		String SIGNATURE = " getServerNodeID()";
+	private String getUniqueServerID() {
+		String SIGNATURE = " getUniqueServerID()";
 		TRACE.entering(SIGNATURE);
 		
+		String userDir = System.getProperty("user.dir");
+		// user.dir : /usr/sap/<SID>/J21/j2ee/cluster/<serverID>
+		String uniqueServerID = String.valueOf((userDir+"").hashCode());
+		// 569574458
+		TRACE.exiting(SIGNATURE,uniqueServerID);
 		
-		String ServerNodeID = "N/A";
-		
-		TRACE.exiting(SIGNATURE,ServerNodeID);
-		
-		return ServerNodeID;
+		return uniqueServerID;
 	}
 
 	/***
