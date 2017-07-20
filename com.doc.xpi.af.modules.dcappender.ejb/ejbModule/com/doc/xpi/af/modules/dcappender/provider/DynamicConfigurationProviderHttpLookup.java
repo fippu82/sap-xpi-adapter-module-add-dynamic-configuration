@@ -54,7 +54,7 @@ public class DynamicConfigurationProviderHttpLookup implements DynamicConfigurat
 		String parameterValue = null;
 		Boolean storageEnabled = false;
 		Boolean storageClear = false;
-		String storageKey = null;
+		String storageKey = parameters.get("ModuleContext.ChannelID");
 		Boolean serverNodeSpecific = false;
 		int storageExpirationTime = 1000;
 				
