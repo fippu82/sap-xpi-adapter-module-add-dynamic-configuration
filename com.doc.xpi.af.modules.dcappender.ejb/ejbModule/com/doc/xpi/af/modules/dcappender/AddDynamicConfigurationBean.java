@@ -70,7 +70,9 @@ public class AddDynamicConfigurationBean implements Module {
 				.getDynamicConfigurationProviderClassName(moduleContext);
 		Map<String, String> dcProviderParameters = this
 				.getDynamicConfigurationProviderParameters(moduleContext);
-
+		// Add ChannelID as Parameter for further usage
+		dcProviderParameters.put("ModuleContext.ChannelID", moduleContext.getChannelID());
+		
 		// Get XI message
 		XIMessage xiMessage = (XIMessage) moduleData.getPrincipalData();
 		com.sap.aii.af.sdk.xi.mo.Message xmbMessage = (com.sap.aii.af.sdk.xi.mo.Message) xiMessage
