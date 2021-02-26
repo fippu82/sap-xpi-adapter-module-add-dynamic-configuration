@@ -14,7 +14,7 @@ public class KeyValueStore {
 	static final String UNIQUE_KEY_LAST_CLEAR = UNIQUE_KEY+".LastClear";
 	static final Integer MAX_TOKEN_IDENTIFIER_LENGHT = 40;
 	static final Integer MAX_TOKEN_PART_LENGHT = 100;
-	static final String ID_SUFFIX_FORMAT = "§Part:%05d";
+	static final String ID_SUFFIX_FORMAT = "Â§Part:%05d";
 	static final String END_OF_TOKEN = "=#EOK#";
 	private static final Location TRACE = Location
 	.getLocation(KeyValueStore.class.getName());
@@ -137,7 +137,7 @@ public class KeyValueStore {
 				String keyPart = mid + getSuffix(i);
 				i++;
 				TRACE.
-				debugT(SIGNATURE,"adding " 
+				debugT(SIGNATURE,"adding to key value store: " 
 						+ "Key: "
 						+ keyPart
 						+ "ValuePart: "
