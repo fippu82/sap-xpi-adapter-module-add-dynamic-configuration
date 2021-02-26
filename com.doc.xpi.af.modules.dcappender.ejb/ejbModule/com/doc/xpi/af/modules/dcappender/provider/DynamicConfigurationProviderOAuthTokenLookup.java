@@ -141,7 +141,8 @@ public class DynamicConfigurationProviderOAuthTokenLookup implements DynamicConf
 							+ "&scope=" + "&client_id=" + clientId + "&client_secret=" + clientSecret + "";
 					request.setPostData(postData);
 					
-					// PA, 6.3.2020: Retry once if response didn't yield a token. After two tries, throw exception if still failed.   
+					/* Retry once if response didn't yield a token. After two tries, throw exception if still failed. 
+					   This was added due to observed issues during the first try.   */
 					while (parameterValue == null && tries <= 1)
 					{
 						HttpResponse response = HttpClient.doRequest(request, parameters);
